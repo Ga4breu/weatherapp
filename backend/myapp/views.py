@@ -13,7 +13,7 @@ class MyModelViewSet(viewsets.ModelViewSet):
 @api_view(['GET'])
 def get_weather(request):
     city = request.GET.get('city')
-    api_key = '68fdd94fad94e4c7c4be781b00c5aff8'
+    api_key = 'MY_API_KEY'
     if not city:
         return JsonResponse({'error': 'City not provided'}, status=400)
 
